@@ -174,6 +174,7 @@ export default function App() {
         <View style={styles.keypadRow}>
           <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonWhite, { flex: 2 }]}
+            onPress={() => pushDigit(0)}
           >
             <Text style={styles.keypadText}>0</Text>
           </TouchableOpacity>
