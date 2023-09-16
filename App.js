@@ -96,21 +96,21 @@ export default function App() {
         <View style={styles.keypadRow}>
           <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonWhite]}
-            onPress={() => pushDigit(1)}
+            onPress={() => pushDigit(7)}
           >
-            <Text style={styles.keypadText}>1</Text>
+            <Text style={styles.keypadText}>7</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonWhite]}
-            onPress={() => pushDigit(2)}
+            onPress={() => pushDigit(8)}
           >
-            <Text style={styles.keypadText}>2</Text>
+            <Text style={styles.keypadText}>8</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonWhite]}
-            onPress={() => pushDigit(3)}
+            onPress={() => pushDigit(9)}
           >
-            <Text style={styles.keypadText}>3</Text>
+            <Text style={styles.keypadText}>9</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonOrange]}
@@ -146,23 +146,23 @@ export default function App() {
           </TouchableOpacity>
         </View>
         <View style={styles.keypadRow}>
-          <TouchableOpacity
+        <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonWhite]}
-            onPress={() => pushDigit(7)}
+            onPress={() => pushDigit(1)}
           >
-            <Text style={styles.keypadText}>7</Text>
+            <Text style={styles.keypadText}>1</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonWhite]}
-            onPress={() => pushDigit(8)}
+            onPress={() => pushDigit(2)}
           >
-            <Text style={styles.keypadText}>8</Text>
+            <Text style={styles.keypadText}>2</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonWhite]}
-            onPress={() => pushDigit(9)}
+            onPress={() => pushDigit(3)}
           >
-            <Text style={styles.keypadText}>9</Text>
+            <Text style={styles.keypadText}>3</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.keypadButton, styles.keypadButtonOrange]}
@@ -202,21 +202,11 @@ const styles = StyleSheet.create({
     alignItems: 'stretch',
     backgroundColor: '#2d2d2d',
   },
-  top: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-  },
-  total: {
-    color: '#ffffff',
-    fontSize: 18,
-  },
-  op: {
-    color: '#ffffffdd',
-  },
   display: {
     textAlign: 'right',
     fontSize: 72,
     color: '#ffffff',
+    marginHorizontal: 10
   },
   keypad: {
     padding: 3,
